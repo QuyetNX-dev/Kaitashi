@@ -1,0 +1,157 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/**
+ * Clear inner floats
+ */
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+
+.hide-text {
+    overflow: hidden;
+    padding: 0;
+    text-indent: 101%;
+    white-space: nowrap;
+}
+
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.help-lsn,
+.help-lsn>li {
+    list-style: none;
+}
+
+.help-posr {
+    position: relative;
+}
+
+.help-posa {
+    position: absolute;
+}
+
+.help-posf {
+    position: fixed;
+}
+
+.help-imgdf>img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+.help-pt0 {
+    padding-top: 0 !important;
+}
+
+.help-pr0 {
+    padding-right: 0 !important;
+}
+
+.help-pt0 {
+    padding-top: 0 !important;
+}
+
+.help-pb0 {
+    padding-bottom: 0 !important;
+}
+
+.help-tdu {
+    text-decoration: underline;
+}
+
+.help-tdn {
+    text-decoration: none;
+}
+
+.help-vat {
+    vertical-align: top;
+}
+
+.help-fwb {
+    font-weight: bold;
+}
+
+.help-fw2 {
+    font-weight: 200;
+}
+
+.help-fw3 {
+    font-weight: 300;
+}
+
+.help-fw4 {
+    font-weight: 400;
+}
+
+.help-fw5 {
+    font-weight: 500;
+}
+
+.help-fw6 {
+    font-weight: 600;
+}
+
+.help-fw7 {
+    font-weight: 700;
+}
+
+.help-fw8 {
+    font-weight: 800;
+}
+
+.help-fw9 {
+    font-weight: 900;
+}
+
+.help-ovfh {
+    overflow: hidden;
+}
+
+.help-img-backstretch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 101%;
+    min-width: 101%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.pl-1n12 {
+    padding-left: percentage($number: 1/12);
+}
+
+.pr-1n12 {
+    padding-right: percentage($number: 1/12);
+}
+
+

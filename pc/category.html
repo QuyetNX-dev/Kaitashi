@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<link rel="stylesheet" href="./assets/stylesheets/sass/dist/main.css">
+
+	<link rel="stylesheet" href="https://kaitashi.com/template/2018v1/script/style_new.css?v=1.134.82">
+</head>
+<body>
+
+	<header class="header-pc">
+		<div class="header-top">
+			<div class="container">
+				<div class="wrap-ct">
+					<a class="h-left" href="">
+						<span class="ic">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+						</span>
+						Hệ thống showroom kaitashi
+					</a>
+					<a href="" class="logo_v21"><img src="./assets/images/logo_v21.png" alt=""></a>
+					<a href="" class="h-right">
+						<span class="ic"><i class="fa fa-phone" aria-hidden="true"></i></span>
+						Hotline: <strong>1800 6585</strong>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bot">
+			<div class="container">
+				<div class="wrap-ct">
+					<div class="h-left">
+						<a href="javascript:void(0)" class="js-show-form-search">Tìm kiếm 
+							<span class="show-box-search"><i class="fa fa-search" aria-hidden="true"></i></span>
+							<span class="hidden-box-search" style="display: none;"><i class="fa fa-times" aria-hidden="true"></i></span>
+						</a>
+					</div>
+					<div class="h-center">
+						<ul class="wra-list-category">
+							<li class="item-cat">
+								<a class="cat-1" href="">Trang chủ</a>
+							</li>
+							<li class="item-cat">
+								<a class="cat-1" href="">Ghế massage</a>
+							</li>
+							<li class="item-cat">
+								<a class="cat-1" href="">Máy chạy bộ</a>
+							</li>
+							<li class="item-cat">
+								<a class="cat-1" href="">Xe đạo tập thể dục</a>
+							</li>
+							<li class="item-cat">
+								<a class="cat-1" href="">Máy massage</a>
+							</li>
+						</ul>
+					</div>
+					<div class="h-right">
+						<a href="" class="icon-us">
+							<span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+						</a>
+						<a class="icon-cart" href="">
+							<span class="icon-f"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+							<span class="count-cart">0</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap-form" id="js-wrap-form">
+			<form action="/tim" name="search" method="GET">
+				<input type="text" name="q" id="js-seach-input" placeholder="Tìm kiếm...">
+				<button><i class="fa fa-search" aria-hidden="true"></i></button>
+				<div class="box-insearch js-box-result is-actie-scroll" id="js-seach-result">
+					<a href="" class="insearch_item">
+						<div class="left_img">
+							<img src="./assets/images/pd1.jpg" alt="">
+						</div>
+						<div class="right_content">
+							<span class="content_title">OMNITAPPS – BROCHURE SELECTOR</span>
+							<span class="content_price">Liên hệ</span>
+						</div>
+					</a>			
+				</div>
+			</form>
+		</div>
+	</header>
+
+	<!--header-mobile-->
+	<header class="header-mobile">
+		<div class="tabar-top-header wrap-label container">
+			<div class="left-tabar">
+				<div class="logo">
+					<img src="./assets/images/logo_v21.png" alt="">
+				</div>
+			</div>
+			<div class="right-tabar">
+				<a href="" class="car-tb">
+					<span class="icon-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+					<span class="count-cart">0</span>
+				</a>
+				<a href="" class="tel-tb"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="wrap-label container wrap-header">
+			<div class="nav-header">
+				<div class="wr-humbuger">
+					<div class="hambuger">
+						<div class="item-line"></div>
+						<div class="item-line"></div>
+						<div class="item-line"></div>
+					</div>
+				</div>
+				<div class="block-search">
+					<form action="" class="form-search">
+						<input type="text" class="search">
+						<button><i class="fa fa-search" aria-hidden="true"></i></button>
+						<div class="box-insearch js-box-result is-actie-scroll" id="js-seach-result">
+							<a href="/hura-test-khog-xoa2.html" class="insearch_item">
+								<div class="left_img">
+									<img src="./assets/images/it.jpg" alt="">
+								</div>
+								<div class="right_content">
+									<span class="content_title">Hura test khog xoa2</span>
+									<span class="content_price">50.000.000₫</span>
+								</div>
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="main-menu">
+				<div class="list">
+					<div class="item">
+						<a href="/" class="item current"><span class="icon"><i class="fa fa-home"></i></span><span class="title">Trang chủ</span></a>
+					</div>
+					<ul class="category">
+						<li class="item-sub-lv1" id="js-hover-brand-mb">
+							<ul class="wrap-lv2">
+								<li class="item-sub-lv2 wrap-list-brand">
+									<a href="" class="item-brand">
+										<div class="brand_img">	
+											<img src="./assets/images/dulux.jpg">
+										</div>
+										<div class="brand_name">
+											Dulux
+										</div>
+									</a>
+									<a href="" class="item-brand">
+										<div class="brand_img">	
+											<img src="./assets/images/dulux.jpg">
+										</div>
+										<div class="brand_name">
+											Dulux
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="item-sub-lv1">
+							<div class="sub-lv1-title js-toggle-next">
+								<a href="">PC, Workstation</a>
+								<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							</div>
+							<ul class="wrap-lv2">
+								<li class="item-sub-lv2">
+									<div class="sub-lv2-title js-toggle-next">
+										<a href="">HH WORKSTATION - INTEL CORE</a>
+										<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+									</div>
+									<ul class="wrap-lv3">
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="item-sub-lv1">
+							<div class="sub-lv1-title js-toggle-next">
+								<a href="">PC, Workstation</a>
+								<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							</div>
+							<ul class="wrap-lv2">
+								<li class="item-sub-lv2">
+									<div class="sub-lv2-title js-toggle-next">
+										<a href="">HH WORKSTATION - INTEL CORE</a>
+										<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+									</div>
+									<ul class="wrap-lv3">
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="item-sub-lv1">
+							<div class="sub-lv1-title js-toggle-next">
+								<a href="">PC, Workstation</a>
+								<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							</div>
+							<ul class="wrap-lv2">
+								<li class="item-sub-lv2">
+									<div class="sub-lv2-title js-toggle-next">
+										<a href="">HH WORKSTATION - INTEL CORE</a>
+										<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+									</div>
+									<ul class="wrap-lv3">
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="item-sub-lv1">
+							<div class="sub-lv1-title js-toggle-next">
+								<a href="">PC, Workstation</a>
+								<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							</div>
+							<ul class="wrap-lv2">
+								<li class="item-sub-lv2">
+									<div class="sub-lv2-title js-toggle-next">
+										<a href="">HH WORKSTATION - INTEL CORE</a>
+										<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+									</div>
+									<ul class="wrap-lv3">
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="item-sub-lv1">
+							<div class="sub-lv1-title js-toggle-next">
+								<a href="">PC, Workstation</a>
+								<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							</div>
+							<ul class="wrap-lv2">
+								<li class="item-sub-lv2">
+									<div class="sub-lv2-title js-toggle-next">
+										<a href="">HH WORKSTATION - INTEL CORE</a>
+										<span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+									</div>
+									<ul class="wrap-lv3">
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+										<li><a href="">HH WORKSTATION - INTEL CORE2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="item">
+						<a href="/" class="item current"><span class="icon"><i class="fa fa-home"></i></span><span class="title">Trang chủ</span></a>
+					</div>
+					<div class="item">
+						<a href="/" class="item current"><span class="icon"><i class="fa fa-history" aria-hidden="true"></i></span><span class="title">Sản phẩm đã xem</span></a>
+					</div>
+					<div class="item">
+						<a href="/" class="item current"><span class="icon"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span><span class="title">Tin tức</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--endh header mobile-->
+
+	<div class="change-2021">
+		<section class="breadcrumb-v21">
+            <div class="wrap-label container">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="name_item">Trang chủ <span class="icon_spac">/</span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="name_item">Danh mục <span class="icon_spac">/</span></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="block-banner-category">
+            <div class="wrap-label container">
+                <div class="swiper-container __navigation">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="slide-item" href="">
+                                <img src="./assets/images/banner_category.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="block-summary-category">
+			<div class="container">
+				<div class="wrap-label">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illum doloribus sint ad cumque sapiente hic tempora eaque odit itaque. Officia quis consectetur assumenda doloremque. Nisi consequatur molestiae laboriosam. Blanditiis!</p>
+				</div>
+			</div>
+        </div>
+        <div class="block-filter">
+            <div class="wrap-label container">
+                <div class="wrap-ct">
+                    <div class="child-category">
+                        <div class="title">Ghế massage</div>
+                        <div class="wrap-list">
+                            <a class="item" href="">Ghế massage luxury</a>
+                            <a class="item" href="">Ghế massage Phổ thông</a>
+                        </div>
+                    </div>
+                    <div class="block-filter-short">
+                        <div class="price-range">
+                            <div class="title-range">Khoảng giá</div>
+                            <div class="wrap-list">
+                                <a href="" class="item is-active">Từ 10 đến 20 triệu <span class="close-v21"><i class="fa fa-times" aria-hidden="true"></i></span></a>
+                                <a href="" class="item">Từ 10 đến 20 triệu</a>
+                                <a href="" class="item">Từ 10 đến 20 triệu</a>
+                                <a href="" class="item">Từ 10 đến 20 triệu</a>
+                            </div>
+                        </div>
+                        <div class="filter-short">
+                            <select name="" id="">
+                                <option value="">Sắp xếp</option>
+                            </select>
+                            <div class="grid-show">
+                                <a href="javascript:void(0)" class="js-grid-control is-active"><i class="fa fa-th-large"></i></a>
+                                <a href="javascript:void(0)" class="js-grid-control" data-grid="grid"><i class="fa fa-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-pd-cat">
+            <div class="wrap-label container">
+                <div class="wrap-list-product js-grid">
+                    <a class="item-pd-label" href="">
+						<div class="wrap-img">
+							<img class="img-pd" src="./assets/images/pd1.jpg" alt="">
+							<img class="ic-sale" src="./assets/images/icon_sale.png" alt="">
+						</div>
+						<div class="wrap-icon">
+							<img class="ic-hot" src="./assets/images/icon_hot.png" alt="">
+							<div class="ic-of" style="background-image: url('./assets/images/icon_of.png');">
+								<span class="text-of">20%</span>
+							</div>
+							<div class="ic-cart">
+								<img src="./assets/images/icon_cart.png" alt="">
+							</div>
+						</div>
+						<div class="group-text">
+							<div class="name-pd">Ghế massage Kaitashi</div>
+							<div class="price">48.000.000 VNĐ</div>
+							<div class="price-market">49.000.000 VNĐ</div>
+						</div>
+					</a>
+                    
+                </div>
+                <a class="more-tue" href="">Xem thêm sản phẩm <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="block-static-html">
+            <div class="wrap-label container">
+                <div class="wrap-ct js-block-html-static rs-html">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio harum, voluptates voluptas voluptate non, numquam cumque nesciunt similique, perferendis dicta quaerat facilis neque culpa debitis ducimus nobis ut veritatis minus.</p>
+                    <ul>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore laboriosam qui veritatis incidunt ex a nesciunt.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore laboriosam qui veritatis incidunt ex a nesciunt.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore laboriosam qui veritatis incidunt ex a nesciunt.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore laboriosam qui veritatis incidunt ex a nesciunt.</li>
+                    </ul>
+                    <p><img src="./assets/images/banner_category.jpg" alt=""></p>
+                    <p><img src="./assets/images/banner_category.jpg" alt=""></p>
+                    <p><img src="./assets/images/banner_category.jpg" alt=""></p>
+                </div>
+                <div class="more_ js-show">Xem tất cả <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div class="block-question">
+            <div class="wrap-label container">
+                <div class="title">Câu hỏi thường gặp</div>
+                <div class="wrap-list">
+                    <div class="item">
+                        <div class="item-title">
+                            Lý do người trung niên, người già nên dùng ghế massage thường xuyên ?
+                            <span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="item-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae asperiores mollitia fugit tenetur, ex molestias molestiae, adipisci debitis quas iusto, cupiditate harum veniam eos laboriosam possimus officiis! Corrupti, quis provident.</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            Lý do người trung niên, người già nên dùng ghế massage thường xuyên ?
+                            <span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="item-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae asperiores mollitia fugit tenetur, ex molestias molestiae, adipisci debitis quas iusto, cupiditate harum veniam eos laboriosam possimus officiis! Corrupti, quis provident.</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            Lý do người trung niên, người già nên dùng ghế massage thường xuyên ?
+                            <span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="item-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae asperiores mollitia fugit tenetur, ex molestias molestiae, adipisci debitis quas iusto, cupiditate harum veniam eos laboriosam possimus officiis! Corrupti, quis provident.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-article-same">
+            <div class="wrap-label container">
+                <div class="h-article">
+                    <div class="title-article">Tin tức liên quan</div>
+                </div>
+                <div class="wrap-list">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="item-aticle-basic" href="">
+                                    <div class="wrap-img">
+                                        <img src="./assets/images/new1.jpg" alt="">
+                                    </div>
+                                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime blanditiis minima ab quisquam facilis mollitia corrupti consequuntur! Tenetur consequatur incidunt dicta quasi possimus quas nam animi, aliquam nihil amet?</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="item-aticle-basic" href="">
+                                    <div class="wrap-img">
+                                        <img src="./assets/images/new1.jpg" alt="">
+                                    </div>
+                                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime blanditiis minima ab quisquam facilis mollitia corrupti consequuntur! Tenetur consequatur incidunt dicta quasi possimus quas nam animi, aliquam nihil amet?</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="item-aticle-basic" href="">
+                                    <div class="wrap-img">
+                                        <img src="./assets/images/new1.jpg" alt="">
+                                    </div>
+                                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime blanditiis minima ab quisquam facilis mollitia corrupti consequuntur! Tenetur consequatur incidunt dicta quasi possimus quas nam animi, aliquam nihil amet?</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="wrap-button-pa">
+							<div class="swiper-button-next"><img src="./assets/images/ic-next-black.png" alt=""></div>
+							<div class="swiper-button-prev"><img src="./assets/images/ic-back-black.png" alt=""></div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<footer style="background-image: url(./assets/images/bg-footer.jpg);">
+		<div class="ft-top">
+			<div class="container">
+				<div class="wrap-ct">
+					<div class="item-col">
+						<div class="title-col-label">Về Kaitashi group</div>
+						<div class="wrap-chil">
+							<a class="item-link" href="">Giới thiệu về Kaitashi</a>
+							<a class="item-link" href="">Thông tin liên hệ</a>
+							<a class="item-link" href="">Thông tin tuyển dụng</a>
+							<a class="item-link" href="">Tin tức</a>
+							<a class="item-link" href="">Hệ thống Showroom</a>
+						</div>
+					</div>
+					<div class="item-col">
+						<div class="title-col-label">Hướng dẫn</div>
+						<div class="wrap-chil">
+							<a class="item-link" href="">Giới thiệu về Kaitashi</a>
+							<a class="item-link" href="">Thông tin liên hệ</a>
+							<a class="item-link" href="">Thông tin tuyển dụng</a>
+							<a class="item-link" href="">Tin tức</a>
+							<a class="item-link" href="">Hệ thống Showroom</a>
+						</div>
+					</div>
+					<div class="item-col">
+						<div class="title-col-label">Hỗ trợ chả nhanh</div>
+						<div class="wrap-chil">
+							<a class="item-link" href="">
+								<span class="text-red">Mail hỗ trợ nhanh</span>
+								<span>info@kaitashi.com</span>
+							</a>
+							<a class="item-link" href="">
+								<span class="text-red">Tổng đài miễn phí</span>
+								<span>1800 6585</span>
+							</a>
+							<a class="item-link" href="">
+								<span class="text-red">Hotline bảo hành - dịch vụ</span>
+								<span>0924 616 888</span>
+							</a>
+							<a class="item-link" href="">
+								<span class="text-red">Khuyến mãi</span>
+								<span>0986 873 213</span>
+							</a>
+						</div>
+					</div>
+					<div class="item-col">
+						<div class="title-col-label">Hỗ trợ chả nhanh</div>
+						<div class="wrap-chil">
+							<a class="item-link" href="">
+								<span class="text-red">Mail hỗ trợ nhanh</span>
+								<span>info@kaitashi.com</span>
+							</a>
+							<a class="item-link" href="">
+								<span class="text-red">Tổng đài miễn phí</span>
+								<span>1800 6585</span>
+							</a>
+							<a class="item-link" href="">
+								<span class="text-red">Hotline bảo hành - dịch vụ</span>
+								<span>0924 616 888</span>
+							</a>
+							<a class="item-link" href="">
+								<span class="text-red">Khuyến mãi</span>
+								<span>0986 873 213</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ft-cen">
+			<div class="container">
+				<div class="wrap-it">
+					<div class="item-scroll">
+						<div class="title-sr">Chi nhánh miền bắc</div>
+						<div class="wrap-ct">
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+						</div>
+					</div>
+					<div class="item-scroll">
+						<div class="title-sr">Chi nhánh miền bắc</div>
+						<div class="wrap-ct">
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+						</div>
+					</div>
+					<div class="item-scroll">
+						<div class="title-sr">Chi nhánh miền bắc</div>
+						<div class="wrap-ct">
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+							<a class="item-sr" href="">
+								<div class="title-map">Kaitashi-Sơn Tây(Hà Nội)</div>
+								<div class="addres">0986 873 213</div>
+								<div class="num">Mobile: 0978 979 891</div>
+								<div class="mor"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Xem bản đồ(có chỗ đậu ô tô)</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ft-bot">
+			<div class="container">
+				<div class="wrap-ct">
+					<div class="left-bot">
+						Copyright © 2021. Tất cả bản quyền thuộc về CÔNG TY TNHH KAITASHI GROUP. Địa chỉ: Lô OBT1, ô số 20 Bắc Linh Đàm mở rộng, Phường Đại Kim, Quận Hoàng Mai, Thành phố Hà Nội. GĐKKD số: 0109203248 được cấp bởi Sở Đầu tư và Kế hoạch HN
+					</div>
+					<div class="right-bot">
+						<img src="./assets/images/icon_ct.png" alt="">
+						<img src="./assets/images/icon_ct2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		var swiper = new Swiper(".wrap-slide-pd .swiper-container", {
+			effect: 'coverflow',
+			loop: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			coverflowEffect: {
+				rotate: 0,
+				stretch: -130,
+				depth: 500,
+				modifier: 1, // 2,3
+				slideShadows : false,
+			},
+			navigation: {
+				nextEl: `.wrap-slide-pd .swiper-button-next`,
+				prevEl: `.wrap-slide-pd .swiper-button-prev`,
+			},
+			breakpoints: {
+				375: {
+					slidesPerView: 2,
+					spaceBetween: 15,
+					effect: '',
+					centeredSlides: false,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 15,
+					effect: '',
+					centeredSlides: false,
+				},
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 15,
+					centeredSlides: false,
+					effect: '',
+				},
+				1366: {
+					slidesPerView: 'auto',
+					spaceBetween: 0,
+					effect: 'coverflow',
+				}
+			}
+			
+		});
+		var bannerSlide = {
+			nameAttr: '.block-banner',
+			slidesPerView: 1,
+			spaceBetween: 0,
+			loop: false,
+			speed: 300,
+		};
+		var bannerCatSlide = {
+			nameAttr: '.block-banner-category',
+			slidesPerView: 1,
+			spaceBetween: 0,
+			loop: false,
+			speed: 300,
+		};
+		var lisNewsSlide = {
+			nameAttr: '.block-article-same',
+			slidesPerView: 2,
+			spaceBetween: 15,
+			loop: false,
+			speed: 300,
+			breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 15
+				},
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 15
+				},
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 15
+				},
+				1366: {
+					slidesPerView: 3,
+					spaceBetween: 20
+				}
+			}
+		}
+		function showFormSearch(){
+			$('.js-show-form-search').click(function(){
+				$(this).find('.show-box-search').toggle()
+				$(this).find('.hidden-box-search').toggle()
+				$('#js-wrap-form').slideToggle(200)
+			})
+		}
+		$(function(){
+			
+			$('.js-grid-control').click(function(){
+				$('.js-grid-control').removeClass('is-active');
+				$(this).addClass('is-active')
+				if($(this).attr('data-grid')){
+					$('.wrap-list-product').addClass('js-grid')
+				}else{
+					$('.wrap-list-product').removeClass('js-grid')
+				}
+			})
+
+			runMultipleSwiperParam(bannerCatSlide, lisNewsSlide)
+			showFormSearch()
+			toggleClassName('hambuger', 'main-menu', 'js-active', 'this' )
+			nextToggleSame('.js-toggle-next','span','js-rotate');
+
+            toggleContent({
+				block_content: '.js-block-html-static', 
+				action: '.js-show', 
+				height_block_content: 250, 
+				xem_them: `Xem tất cả <i class="fa fa-caret-down" aria-hidden="true"></i>`, 
+				dong_lai: `Đóng lại <i class="fa fa-caret-up" aria-hidden="true"></i>`
+			})
+
+            nextToggleSame('.block-question .item-title', '.icon', 'js-rotate')
+		})
+	</script>
+</body>
+</html>

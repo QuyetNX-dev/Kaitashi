@@ -1,0 +1,2 @@
+# Run with terminal
+sass --watch main.scss:../dist/main.css --style compressed

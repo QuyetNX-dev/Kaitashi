@@ -1,0 +1,54 @@
+@mixin fixedFull {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin absoluteFull {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin absoluteItemCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin bgCoverCenter {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin fontSmoothing($value) {
+    -webkit-font-smoothing: $value;
+    -moz-font-smoothing: $value;
+    font-smoothing: $value;
+}
+
+@mixin mediaMaxWidth($breakpoints) {
+    @media only screen and (max-width: $breakpoints) {
+        @content;
+    }
+}
+
+@mixin mediaMinWidth($value) {
+    @media (min-width: #{map-get($breakpoints, $value)}) {
+        @content;
+    }
+}

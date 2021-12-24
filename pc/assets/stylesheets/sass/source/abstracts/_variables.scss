@@ -1,0 +1,95 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+$font-size-9: 9px;
+$font-size-10: 10px;
+$font-size-11: 11px;
+$font-size-12: 12px;
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-15: 15px;
+$font-size-15: 15px;
+$font-size-16: 16px;
+$font-size-17: 17px;
+$font-size-18: 18px;
+$font-size-19: 19px;
+$font-size-20: 20px;
+$font-Roboto : 'Roboto', sans-serif;
+$font-NotoSansJP : 'Noto Sans JP', sans-serif;
+$distance_mobile: 30px;
+// color
+$color-black: #333333;
+$color-white: #FFFFFF;
+$color-red: #EB5757;
+$color-pale-brown:#BCAE92;
+$color-gray:#BDBDBD;
+$color-gray-08:#F5F5F5;
+$color-green:#63D773;
+//font-weight
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+//height
+.h-100vh{
+	height:100vh;
+}
+body{
+    position: relative;
+}
+.w-768{
+    @media (min-width:768px){
+        width: 768px;
+        max-width: 768px;
+        margin: 0 auto;
+    } 
+}
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+    'xl': 1200px,
+    'lg': 992px,
+    'md': 768px,
+    'sm': 576px
+    ) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+/// $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets' !default;
+$img-url: '../../../images';
+$font-url: '../../../fonts';
+$bower-url: '../../bower_components';

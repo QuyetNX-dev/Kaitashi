@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains fonts, helpers, stylesheets default
+// -----------------------------------------------------------------------------
+
+@charset "UTF-8";
+
+@import "abstracts/_variables";
+@import "abstracts/_mixins";
+
+@import "base/_default";
+@import "base/_fonts";
+
+@import "layout/general";
+@import "pages/home.scss";
+@import "pages/category.scss";
+@import "pages/pd-detail.scss";
+@import "pages/test.scss";
+
